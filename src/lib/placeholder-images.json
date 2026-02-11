@@ -3,8 +3,68 @@
     {
       "id": "avatar-placeholder",
       "description": "A placeholder avatar image",
-      "imageUrl": "https://images.unsplash.com/photo-1517903803608-3821619f1320?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMHBlcnNvbnxlbnwwfHx8fDE3NzA3NzgzMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "abstract person"
+      "imageUrl": "https://placehold.co/400x400/e5e7eb/e5e7eb.png",
+      "imageHint": "solid gray placeholder"
+    },
+    {
+      "id": "page-bg-gradient-sunset",
+      "description": "Gradient sunset sky",
+      "imageUrl": "https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=1200&q=80",
+      "imageHint": "gradient sunset sky background"
+    },
+    {
+      "id": "page-bg-minimal-waves",
+      "description": "Minimal waves pattern",
+      "imageUrl": "https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?w=1200&q=80",
+      "imageHint": "minimal abstract waves"
+    },
+    {
+      "id": "page-bg-geometric",
+      "description": "Geometric patterns",
+      "imageUrl": "https://images.unsplash.com/photo-1557682260-96773eb01377?w=1200&q=80",
+      "imageHint": "geometric abstract background"
+    },
+    {
+      "id": "page-bg-gradient-blue",
+      "description": "Blue gradient mesh",
+      "imageUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=1200&q=80",
+      "imageHint": "blue gradient mesh"
+    },
+    {
+      "id": "page-bg-soft-pink",
+      "description": "Soft pink gradient",
+      "imageUrl": "https://images.unsplash.com/photo-1557682268-e3955ed5d83f?w=1200&q=80",
+      "imageHint": "soft pink gradient background"
+    },
+    {
+      "id": "button-bg-glass",
+      "description": "Frosted glass effect",
+      "imageUrl": "https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?w=600&q=80",
+      "imageHint": "frosted glass texture"
+    },
+    {
+      "id": "button-bg-marble",
+      "description": "White marble texture",
+      "imageUrl": "https://images.unsplash.com/photo-1615873968403-89e068629265?w=600&q=80",
+      "imageHint": "white marble texture"
+    },
+    {
+      "id": "button-bg-paper",
+      "description": "Textured paper",
+      "imageUrl": "https://images.unsplash.com/photo-1557682233-43e671455dfa?w=600&q=80",
+      "imageHint": "textured paper background"
+    },
+    {
+      "id": "button-bg-gradient-teal",
+      "description": "Teal gradient",
+      "imageUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&q=80",
+      "imageHint": "teal gradient"
+    },
+    {
+      "id": "button-bg-wood",
+      "description": "Light wood texture",
+      "imageUrl": "https://images.unsplash.com/photo-1557683325-3ba8f0df79de?w=600&q=80",
+      "imageHint": "light wood texture"
     }
   ]
 }

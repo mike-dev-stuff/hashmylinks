@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Check, Copy, Share2 } from "lucide-react";
+import { Check, Copy, Share2, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -57,22 +57,89 @@ export function ShareProfile({ profileData }: { profileData: ProfileData }) {
           Share
         </Button>
       </DialogTrigger>
-      <DialogContent>
+      <DialogContent className="max-w-2xl">
         <DialogHeader>
           <DialogTitle>Share Your Profile</DialogTitle>
           <DialogDescription>
             Anyone with this link can view your profile.
           </DialogDescription>
         </DialogHeader>
-        <div className="flex items-center space-x-2">
-          <Input value={url} readOnly className="flex-grow" />
-          <Button size="icon" onClick={handleCopy}>
-            {isCopied ? (
-              <Check className="h-4 w-4" />
-            ) : (
-              <Copy className="h-4 w-4" />
-            )}
-          </Button>
+        <div className="space-y-4">
+          <div className="flex items-center space-x-2">
+            <Input value={url} readOnly className="flex-grow font-mono text-xs" />
+            <Button size="icon" onClick={handleCopy}>
+              {isCopied ? (
+                <Check className="h-4 w-4" />
+              ) : (
+                <Copy className="h-4 w-4" />
+              )}
+            </Button>
+          </div>
+
+          <div className="border-t pt-4">
+            <h4 className="text-sm font-medium mb-2 text-muted-foreground">
+              Recommended URL Shorteners
+            </h4>
+            <p className="text-xs text-muted-foreground mb-3">
+              This URL can get quite long. Use a free URL shortener to make it easier to share:
+            </p>
+            <div className="grid grid-cols-2 gap-2">
+              <a
+                href="https://bitly.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-2 rounded-md border hover:bg-accent transition-colors text-sm"
+              >
+                <span className="font-medium">Bitly</span>
+                <ExternalLink className="h-3 w-3 text-muted-foreground" />
+              </a>
+              <a
+                href="https://tinyurl.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-2 rounded-md border hover:bg-accent transition-colors text-sm"
+              >
+                <span className="font-medium">TinyURL</span>
+                <ExternalLink className="h-3 w-3 text-muted-foreground" />
+              </a>
+              <a
+                href="https://short.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-2 rounded-md border hover:bg-accent transition-colors text-sm"
+              >
+                <span className="font-medium">Short.io</span>
+                <ExternalLink className="h-3 w-3 text-muted-foreground" />
+              </a>
+              <a
+                href="https://rebrandly.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-2 rounded-md border hover:bg-accent transition-colors text-sm"
+              >
+                <span className="font-medium">Rebrandly</span>
+                <ExternalLink className="h-3 w-3 text-muted-foreground" />
+              </a>
+              <a
+                href="https://is.gd"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-2 rounded-md border hover:bg-accent transition-colors text-sm"
+              >
+                <span className="font-medium">Is.gd</span>
+                <ExternalLink className="h-3 w-3 text-muted-foreground" />
+              </a>
+              <a
+                href="https://t.ly"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-2 rounded-md border hover:bg-accent transition-colors text-sm"
+              >
+                <span className="font-medium">T.ly</span>
+                <ExternalLink className="h-3 w-3 text-muted-foreground" />
+              </a>
+            </div>
+          </div>
         </div>
       </DialogContent>
     </Dialog>
