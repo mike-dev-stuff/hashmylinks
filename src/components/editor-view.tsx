@@ -6,6 +6,7 @@ import * as z from "zod";
 import Link from "next/link";
 import {
   ArrowLeft,
+  Github,
   Link as LinkIcon,
   Palette,
   Plus,
@@ -504,6 +505,17 @@ export function EditorView() {
                 </CardContent>
               </Card>
             </form>
+            <div className="p-6 pt-0 flex justify-center">
+              <a
+                href="https://github.com/mike-dev-stuff/hashmylinks"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Github className="h-4 w-4" />
+                View on GitHub
+              </a>
+            </div>
           </ScrollArea>
         </div>
         <div className="hidden md:block bg-muted/30 border-l relative">

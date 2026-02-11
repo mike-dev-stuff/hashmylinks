@@ -63,7 +63,6 @@ export function ImageSelector({
               <img
                 src={preset.imageUrl}
                 alt={preset.description}
-                data-ai-hint={preset.imageHint}
                 className="w-full h-full object-cover"
               />
               {value === preset.imageUrl && (

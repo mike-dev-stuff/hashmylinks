@@ -1,9 +1,4 @@
-// Default API key for ImgBB (free tier, publicly shared)
-// Users can get their own free API key at: https://api.imgbb.com/
-// Note: This key is exposed client-side. For production, consider allowing users to provide their own key
-const DEFAULT_IMGBB_API_KEY = 'd2f4d3e8c5e8f9e8e8e8e8e8e8e8e8e8'; // You'll need to replace this with a real API key from imgbb.com
-
-export async function uploadImageToImgBB(file: File, apiKey: string = DEFAULT_IMGBB_API_KEY): Promise<string> {
+export async function uploadImageToImgBB(file: File, apiKey: string = process.env.NEXT_PUBLIC_IMGBB_API_KEY ?? ''): Promise<string> {
   try {
     const formData = new FormData();
     formData.append('image', file);

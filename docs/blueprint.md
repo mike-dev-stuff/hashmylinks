@@ -6,7 +6,6 @@
 - Link Addition: Users add links to their profile, each with a title and associated URL. The application uses URL-based storage, which avoids a back-end.
 - Profile Preview: Allow users to preview their profile as it would appear to visitors.
 - Customization Options: Users can select basic theme options to personalize the appearance of their page, like colors or fonts.
-- AI-Driven Theme Suggestions: Uses a generative AI tool to suggest theme customizations based on user input like the type of content they're sharing.
 
 ## Style Guidelines:
 

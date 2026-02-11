@@ -16,9 +16,9 @@ export function LandingView() {
         </p>
         <Link
           href="/edit"
-          className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all hover:scale-110 shadow-lg hover:shadow-xl"
+          className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary text-primary-foreground hover:bg-[hsl(var(--primary-hover))] transition-all hover:scale-110 shadow-lg hover:shadow-xl"
         >
-          <ArrowRight className="w-8 h-8" />
+          <ArrowRight className="w-8 h-8 text-background" />
         </Link>
       </div>
     </main>

@@ -129,7 +129,7 @@ export function ProfileView({ profile }: { profile: ProfileData }) {
                   : 'rounded-full'
             }`}
           >
-            <AvatarImage src={profile.avatarUrl} alt={profile.name} data-ai-hint="abstract person" />
+            <AvatarImage src={profile.avatarUrl} alt={profile.name} />
             <AvatarFallback>{profile.name.charAt(0)}</AvatarFallback>
           </Avatar>
           <h1
